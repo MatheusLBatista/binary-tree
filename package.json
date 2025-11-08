@@ -1,11 +1,27 @@
 {
   "name": "binary-tree",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Implementação de uma árvore binária de busca usando TypeScript",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js",
+    "dev": "ts-node src/main.ts",
+    "test": "jest --coverage",
+    "clean": "rm -rf dist"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "binary-tree",
+    "typescript"
+  ],
+  "author": "Matheus Lucas Batista",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^24.10.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
 }
